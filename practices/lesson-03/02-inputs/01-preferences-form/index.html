@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Preferences</title>
 </head>
+
 <body>
     <h1>Preferences</h1>
     <form>
+        <label for="color">Favorite color:</label>
+        <input type="color" id="color" name="color">
+        <label for="start">Start date:</label>
+        <input type="date" id="start" name="start">
+        <label for="level">Skill level:</label>
+        <input type="range" id="level" name="level" min="0" max="100">
+        <label for="portfolio">Portfolio:</label>
+        <input type="file" id="portfolio" name="portfolio">
+
         <!-- TODO: Add labeled inputs with matching for, id, and name:
              Favorite color: (color), Start date: (date),
              Skill level: (range, min 0, max 100), Portfolio: (file). -->
         <button type="submit">Save preferences</button>
     </form>
 </body>
+
 </html>
